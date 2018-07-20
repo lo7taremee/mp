@@ -27,11 +27,7 @@ client.user.setGame(`Comeing Soon `,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
-client.on('message' , message => {
-    if(message.content.includes === 'هلا') {
-    message.channel.send(`هلا بيك`);
-    }
-     });
+
 
 
 
