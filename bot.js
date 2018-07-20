@@ -1,7 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "$";
-client.on('message', message => {
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`$help `,"http://twitch.tv/S-F")
+  client.on('message', message => {
   if(message.content === ('clear')) {
   let modRole = message.guild.roles.find("name", "Admin");
   if (!modRole) return message.reply('You do not have Admin Role'); {
@@ -32,9 +35,6 @@ client.on('message', msg => {
 });
 client.on("message", message => {
     var prefix = "$";
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`$help `,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -58,9 +58,7 @@ client.user.setGame(`$help `,"http://twitch.tv/S-F")
   console.log('')
 
 });
-client.on('message', msg => {
-  if (msg.content === '$help') {
-    msg.reply(':envelope: | تم ارسال الرساله في الخاص');
-  }
-});
+
+  
+  
 client.login(process.env.BOT_TOKEN);
