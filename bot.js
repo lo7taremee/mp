@@ -106,7 +106,6 @@ client.on('message', msg => {
   }
 });
 client.on("message", message => {
-    var prefix = ".";
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
@@ -158,7 +157,6 @@ client.on("message", message => {
   message.channel.sendEmbed(embed);
     }
 });
-var prefix = ".";
 client.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
@@ -197,7 +195,6 @@ client.on("message", (message) => {
     }
 });
 client.on('message', function(msg) {
-    const prefix = '.'
     if(msg.content.startsWith (prefix  + 'server')) {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
@@ -215,7 +212,6 @@ client.on('message', function(msg) {
       msg.channel.send({embed:embed});
     }
   });
-  var prefix = "."
 client.on('message', message => {
 
   if (message.content.startsWith( prefix + "sug")) {
@@ -231,7 +227,6 @@ client.on('message', message => {
   }
   });
   client.on('message',function(message) {
-	    var prefix = "."
     let w = ['Rock','Paper','Scissors'];
    if(message.content.startsWith(prefix + "rps")) {       message.channel.send(`\`\`\`csshoose one of the following.#1 ( Rock )#2 ( Paper )
 #3 ( Scissors )
@@ -268,7 +263,6 @@ client.on('message', message => {
    } 
 });
 client.on('message', message => {
-    var prefix = "."
     if (message.content === prefix + "date") {
         var currentTime = new Date(),
             السنة = currentTime.getFullYear(),
@@ -278,7 +272,6 @@ client.on('message', message => {
     }
 });
 client.on('message', message => {
-		    var prefix = "."
    if(message.content.startsWith(prefix + "invites")) {
     message.guild.fetchInvites().then(invs => {
       let user = message.mentions.users.first() || message.author
@@ -289,7 +282,6 @@ message.channel.send(`${user} has ${inviteCount} invites.`);
   }
 });
 client.on("message", async message => {
-			    var prefix = "."
            let args = message.content.split(' ').slice(1);
     if(message.content.startsWith(prefix + 'giveaway')) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
@@ -309,7 +301,6 @@ client.on("message", async message => {
       
     };
 });
-var prefix = ".";
 
 client.on('message', message => {
   if (message.author.bot) return;
@@ -334,7 +325,6 @@ if (command == "embed") {
 });
  client.on('message', message => {
               if(!message.channel.guild) return;
-    var prefix = ".";
     if(message.content.startsWith('.bc')) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
@@ -524,7 +514,6 @@ const Za7f = [
 });
 
 
-  var prefix = ".";
 var rebel = ["https://f.top4top.net/p_682it2tg6.png","https://e.top4top.net/p_682a1cus5.png","https://d.top4top.net/p_682pycol4.png","https://c.top4top.net/p_682vqehy3.png","https://b.top4top.net/p_682mlf9d2.png","https://a.top4top.net/p_6827dule1.png","https://b.top4top.net/p_682g1meb10.png","https://a.top4top.net/p_682jgp4v9.png","https://f.top4top.net/p_682d4joq8.png","https://e.top4top.net/p_6828o0e47.png","https://d.top4top.net/p_6824x7sy6.png","https://c.top4top.net/p_682gzo2l5.png","https://b.top4top.net/p_68295qg04.png","https://a.top4top.net/p_682zrz6h3.png","https://f.top4top.net/p_6828vkzc2.png","https://e.top4top.net/p_682i8tb11.png"]
     client.on('message', message => {
         if (message.author.bot) return;
@@ -634,10 +623,7 @@ const Love = [  "**احبك / عدد قطرات المـــطر والشجر و
 
 
 
-console.log('mariam ra7t tmot al nas');
-client.on('ready', () => {
-  console.log(`im redey`);
-});
+
 const zead = [
    '*** انا اسمي مريم ***',
    '*** مرحباَ ماهو اسمك ؟ ***',
