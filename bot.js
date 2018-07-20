@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '.'
+const prefix = "$";
 client.on('message', message => {
   if(message.content === ('clear')) {
   let modRole = message.guild.roles.find("name", "Admin");
@@ -58,6 +58,9 @@ client.user.setGame(`$help `,"http://twitch.tv/S-F")
   console.log('')
 
 });
-
-
+client.on('message', msg => {
+  if (msg.content === '$help') {
+    msg.reply(':envelope: | تم ارسال الرساله في الخاص');
+  }
+});
 client.login(process.env.BOT_TOKEN);
