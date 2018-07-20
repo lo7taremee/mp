@@ -4,7 +4,7 @@ const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Comeing Soon `,"http://twitch.tv/S-F")
+client.user.setGame(`$help `,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -26,7 +26,7 @@ client.user.setGame(`Comeing Soon `,"http://twitch.tv/S-F")
   console.log('╚[════════════]╝')
   console.log('')
   console.log('')
-});
+
 if (message.content === '$help') {
               var embed  = new Discord.RichEmbed()
                 .addField("generalcommand")
