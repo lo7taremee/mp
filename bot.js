@@ -28,8 +28,8 @@ client.user.setGame(`Comeing Soon `,"http://twitch.tv/S-F")
   console.log('')
 });
 client.on('message' , message => {
-    if(message.content.includes === 'الكلام') {
-    message.channel.send(`الرد`);
+    if(message.content.includes === 'هلا') {
+    message.channel.send(`هلا بيك`);
     }
      });
 
