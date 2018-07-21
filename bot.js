@@ -41,6 +41,7 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', message => {
 if (message.content === '.help') {
               var embed  = new Discord.RichEmbed()
                 .addField("generalcommand")
@@ -106,7 +107,8 @@ client.on('message', msg => {
   }
 });
 client.on("message", message => {
- 
+ var prefix = '.'
+
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('⚠ | **ليس لديك صلاحيات**');
@@ -159,6 +161,7 @@ client.on("message", message => {
 });
 client.on('message', message => {
   if (message.author.bot) return;
+ var prefix = '.'
   if (!message.content.startsWith(prefix)) return;
 
   let command = message.content.split(" ")[0];
