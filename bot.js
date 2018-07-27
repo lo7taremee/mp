@@ -1350,44 +1350,9 @@ client.on('message', message=>{
             }
     }
 });
-const Discord = require('discord.js');
-const client = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on('message', msg => {
-  if (msg.content === 'هلا') {
-    msg.reply('هلا بيك منورنا');
   }
 });
-const Discord = require('discord.js');
-const client = new Discord.Client();
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on('message', msg => {
-  if (msg.content === 'باك') {
-    msg.reply('ولكم منور');
-  }
-});
-const Discord = require('discord.js');
-const client = new Discord.Client();
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on('message', msg => {
-  if (msg.content === 'رابط') {
-    msg.reply('https://discord.gg/9mVMC8S');
-  }
-});
-
-
 
 
 
