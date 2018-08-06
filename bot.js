@@ -40,7 +40,8 @@ f!!
 اما برفكس باقي الاوامر
 f!
 ***
-`)
+}
+});
 
 message.channel.send('شيك على خاصك!')
 message.author.sendEmbed(embed)
