@@ -43,11 +43,12 @@ f!
 }
 });
 
-message.channel.send('شيك على خاصك!')
-message.author.sendEmbed(embed)
-
-}
-}); 
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help*") {
+		 message.channel.send('**تم ارسالك في الخاص**');
+            
+	
  
  
  
