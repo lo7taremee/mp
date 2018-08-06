@@ -1,4 +1,3 @@
-const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -35,7 +34,6 @@ client.on("message", message => {
 ***
 ملاحظه
 Special orders ان برفكس الاوامر المميزه او
-
 يختلف عن جميع الاوامر 
 Special orders برفكس الاوامر المميزه او 
 f!!
@@ -44,7 +42,7 @@ f!
 ***
 `)
 
-
+message.channel.send('شيك على خاصك!')
 message.author.sendEmbed(embed)
 
 }
@@ -58,14 +56,12 @@ client.on("message", message => {
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
       .setDescription(`
-
 ***__وصف عن البوت__***
 **
 Fire bot 
 متعدد الميزات و الاوامر فيه اوامر جميله يحتوي هذا البوت على
 خاصيه قائمه الالوان و تقدر تغير لونك زي برو بوت و مانع الاسبام و الترحيب 
 بصوره
-
 سرعه اتصال ممتازه
 سهل الاستخدام
 صيانه كل يوم
@@ -73,7 +69,6 @@ Fire bot
 بوت عربي وسيتم اضافه اللغه الاجنبيه قريبا
 يحتوي على خاصيه الميوزك بجوده عاليه
 **
-
         ***__General orders__***
 **
 『f!id / معلومات عن حسابك』
@@ -89,7 +84,6 @@ Fire bot
 『f!date / يعرض لك التاريخ』
 『f!dt / يعرض الوقت في الامارات و مكه المكرمه و مصر و التاريخ』
 **
-
         ***__Bot orders__***
 **
 『f!ping / يعرض لك سرعه اتصال البوت』
@@ -99,7 +93,6 @@ Fire bot
 『f!members / حاله الاعضاء』
 『f!bot / معلومات عن البوت』
 **
-
         ***__Administrative Orders__***
 **
 『f!kick / كيك』
@@ -117,8 +110,6 @@ Fire bot
 『f!cv /انشاء روم صوتي』
 『f!bc /برودكاست』
 **
-
-
         ***__Games orders__***
  **       
 『f!لعبه صراحه / صراحه』
@@ -1098,7 +1089,6 @@ client.on('message', message => {
   let user = message.mentions.users.first();
   let reason = message.content.split(" ").slice(2).join(" ");
   /*let b5bzlog = client.channels.find("name", "5bz-log");
-
   if(!b5bzlog) return message.reply("I've detected that this server doesn't have a 5bz-log text channel.");*/
   if (message.mentions.users.size < 1) return message.reply("**منشن شخص**");
   if(!reason) return message.reply ("**اكتب سبب الطرد**");
@@ -1140,7 +1130,6 @@ client.on('message', message => {
   let user = message.mentions.users.first();
   let reason = message.content.split(" ").slice(2).join(" ");
   /*let b5bzlog = client.channels.find("name", "5bz-log");
-
   if(!b5bzlog) return message.reply("I've detected that this server doesn't have a 5bz-log text channel.");*/
   if (message.mentions.users.size < 1) return message.reply("**منشن شخص**");
   if(!reason) return message.reply ("**اكتب سبب الطرد**");
